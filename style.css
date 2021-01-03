@@ -93,3 +93,10 @@ img {
 .active {
   transform: rotateY(180deg);
 }
+.noclick{
+    pointer-events: none;
+}
+
+.dis:hover{
+ cursor:not-allowed;
+}
