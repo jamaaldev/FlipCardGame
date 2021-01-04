@@ -19,59 +19,55 @@ window.onload = () => {
 
 function GeneratorImg() {
 
-  let a = Math.floor((Math.random() * 3) + 1);
-  let b = Math.floor((Math.random() * 3) + 1);
-  let c = Math.floor((Math.random() * 3) + 1);
-  let d = Math.floor((Math.random() * 3) + 1);
-
+  
 
   allPic = `
   <div class="flipcard">
     <div class="front">?</div>
-    <div class="back"><img src="./images/fat${a}.jpg" alt="fat${a}"></div>
+    <div class="back"><img src="./images/fat1.jpg" alt="fat1"></div>
   </div>
 
   <div class="flipcard">
-    <div class="front">?</div>
-    <div class="back"><img src="./images/fat${c}.jpg" alt="fat${c}"></div>
-  </div>
+  <div class="front">?</div>
+  <div class="back"><img src="./images/fat1.jpg" alt="fat1"></div>
+</div>
 
-  <div class="flipcard">
-    <div class="front">?</div>
-    <div class="back"><img src="./images/fat${b}.jpg" alt="fat${b}"></div>
-  </div>
+<div class="flipcard">
+<div class="front">?</div>
+<div class="back"><img src="./images/fat1.jpg" alt="fat1"></div>
+</div>
 
-  <div class="flipcard">
-    <div class="front">?</div>
-    <div class="back"><img src="./images/fat${c}.jpg" alt="fat${c}"></div>
-  </div>
+<div class="flipcard">
+<div class="front">?</div>
+<div class="back"><img src="./images/fat2.jpg" alt="fat2"></div>
+</div>
 
-  <div class="flipcard">
-    <div class="front">?</div>
-    <div class="back"><img src="./images/fat${d}.jpg" alt="fat${d}"></div>
-  </div>
 
-  <div class="flipcard">
-    <div class="front">?</div>
-    <div class="back"><img src="./images/fat${b}.jpg" alt="fat${b}"></div>
-  </div>
+<div class="flipcard">
+<div class="front">?</div>
+<div class="back"><img src="./images/fat2.jpg" alt="fat2"></div>
+</div>
 
-  <div class="flipcard">
-    <div class="front">?</div>
-    <div class="back"><img src="./images/fat${c}.jpg" alt="fat${c}"></div>
-  </div>
+<div class="flipcard">
+<div class="front">?</div>
+<div class="back"><img src="./images/fat2.jpg" alt="fat2"></div>
+</div>
 
-  <div class="flipcard">
-    <div class="front">?</div>
-    <div class="back"><img src="./images/fat${a}.jpg" alt="fat${a}"></div>
-  </div>
 
-  <div class="flipcard">
-    <div class="front">?</div>
-    <div class="back"><img src="./images/fat${d}.jpg" alt="fat${d}"></div>
-  </div>
-
+<div class="flipcard">
+<div class="front">?</div>
+<div class="back"><img src="./images/fat3.jpg" alt="fat3"></div>
+</div>
   
+<div class="flipcard">
+<div class="front">?</div>
+<div class="back"><img src="./images/fat3.jpg" alt="fat3"></div>
+</div>
+
+<div class="flipcard">
+<div class="front">?</div>
+<div class="back"><img src="./images/fat3.jpg" alt="fat3"></div>
+</div>
     `;
 
   images.innerHTML = '';
@@ -126,7 +122,10 @@ function GeneratorImg() {
     });
 
   });
-
+    flipcard.forEach(cards => {
+      let a = Math.floor((Math.random() * 9));
+      cards.style.order = a;
+    })
 };
 
 
